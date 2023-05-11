@@ -1,0 +1,7 @@
+@media only screen and (max-width: 828px) {
+  /* CSS rules for iPhone screens go here */
+  .introduction-body .card-view{
+    width: 600px;
+  }
+
+}

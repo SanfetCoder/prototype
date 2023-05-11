@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Along</title>
+  <!-- Flavicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/Along.ico">  
+  <!-- Icon API -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- External Style Sheet -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Responsive External Style Sheet -->
+  <link rel="stylesheet" href="/css/mobile-style.css">
+  <!-- Responsive External Style Sheet -->
+  <link rel="stylesheet" href="/css/ipad-style.css">
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- SECTION : INTRODUCTION -->
+  <div class="section-introduction">
+    <!-- INTRODUCTION CONTENT -->
+    <div class="introduction-content">
+      <!-- NAVIGATION BAR -->
+      <nav>
+        <!-- Logo -->
+        <img src="images/Along.png" alt="Along logo">
+        <!-- Menu -->
+        <div class="nav-option">
+          <a class="nav-link" href="#">หน้าหลัก</a>
+          <a class="nav-link" href="#">เกี่ยวกับเรา</a>
+          <a class="nav-link" href="#">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <!-- BODY -->
+      <div class="introduction-body">
+        <div class="card-view box-shadow">
+          <!-- Title -->
+          <h3>กรุณากรอกแบบฟอร์ม เพื่อรับแผนเที่ยว</h3>
+
+          <form action="/" method="post">
+            <div class="h-stack">
+              <div class="form-item input-name">
+                <p class="input-title">ชื่อ</p>
+                <div class="input-style">
+                  <input type="text" id="input1" name="firstName"><br>
+                </div>
+              </div>
+              <div class="form-item input-name">
+                <p class="input-title">นามสกุล</p>
+                <div class="input-style">
+                  <input type="text" id="input1" name="surname"><br>
+                </div>
+              </div>
+            </div>
+            <div class="form-item">
+              <p class="input-title">Email</p>
+              <div class="input-style">
+                <input type="email" id="input1" name="email"><br>
+              </div>
+            </div>
+            <div class="h-stack">
+              <div class="form-item-picker">
+                <p class="input-title">เบอร์ติดต่อ</p>
+                <div class="input-style">
+                  <input type="text" id="input1" name="mobileNo"><br>
+                </div>
+              </div>
+              <div class="form-item-picker">
+                <p class="input-title">ประเทศที่ต้องการไป</p>
+                <select class="country-picker" id="country-picker" name="country">
+                  <option value="เกาหลี">เกาหลี</option>
+                  <option value="เวียดนาม">เวียดนาม</option>
+                </select>
+              </div>
+            </div>
+            <div class="h-stack picker">
+              <div class="form-item-picker">
+                <p class="input-title">วันที่ไป</p>
+                <input type="date" id="my-date" name="departDate">
+              </div>
+              <div class="form-item-picker">
+                <p class="input-title">วันที่กลับ</p>
+                <input type="date" id="my-date" name="arriveDate">
+              </div>
+            </div>
+            <div class="submit-button">
+              <input type="submit" value="ส่งแบบฟอร์ม" class="button" name="submit">
+            <p>หรือ</p>
+            <input type="button" class="custom-button" value="สมัครสมาชิก">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF INTRODUCTION -->
+  <!-- SECITON : Value Proposition -->
+  <div class="section-value-proposition slider">
+    <div class="slider-item">
+      <div class="card-view box-shadow">
+        <div class="content">
+          <h1>ทำไมต้องวางแผนเที่ยวกับ<span class="highlighted">Along</span> ?</h1>
+          <div class="h-stack">
+            <div class="value card-view box-shadow">
+              <img src="images/icon-reliable.png" alt="" class="icon">
+              <h3>ได้รับความไว้วางใจ</h1>
+            </div>
+            <div class="value card-view box-shadow">
+              <img src="images/icon-time-saving.png" alt="" class="icon">
+              <h3>ประหยัดเวลาชีวิตของคุณ</h1>
+            </div>
+            <div class="value card-view box-shadow">
+              <img src="images/icon-trend.png" alt="" class="icon">
+              <h3>ที่เที่ยวตามเทรนต์ไม่ตายตัว</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-item">
+      <div class="card-view box-shadow"></div>
+    </div>
+  </div>
+  <!-- End Of Section Value Proposition -->
+  <!-- SECTION : Testimonials -->
+  <div class="section-testimonial">
+    <div class="card-view box-shadow">
+      <div class="content">
+        <h1>ขอบคุณทุกคนที่มาร่วมวางแผนกับ<span class="highlighted">Along</span></h1>
+        <div class="section-testimonial-slider">
+          <div class="slider-arrow">
+            <div class="slider-arrow-right"><span class="material-symbols-outlined">
+              arrow_back_ios
+              </span></div>
+            <div class="slider-arrow-left"><span class="material-symbols-outlined">
+              arrow_forward_ios
+              </span></div>
+          </div>
+          <img src="images/testimonial-1.jpg" alt="" class="slider-image box-shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/javascript/index.js"></script>
+</body>
+</html>

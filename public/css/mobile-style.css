@@ -1,0 +1,10 @@
+@media only screen and (max-width: 580px) {
+  /* CSS rules for iPhone screens go here */
+  .introduction-content nav {
+    display: none;
+  }
+
+  .introduction-body .card-view{
+    transform: translateY(-50px);
+  }
+}
